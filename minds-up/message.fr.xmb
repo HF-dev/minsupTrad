@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<messagebundle>
+  <msg id="970389689158933171"><source>app/user-components/user-card/user-card.component.html:27</source>Dernière observation <ph name="INTERPOLATION"><ex>{{ user.maxCreationDateCurrentObservation | amLocale:&apos;fr&apos; | amTimeAgo}}</ex>{{ user.maxCreationDateCurrentObservation | amLocale:&apos;fr&apos; | amTimeAgo}}</ph></msg>
+  <msg id="1414283069647483325"><source>app/user-components/user-card/user-card.component.html:28</source>Dernière auto-observation <ph name="INTERPOLATION"><ex>{{ user.maxCreationDateCurrentAutoObservation | amLocale:&apos;fr&apos; | amTimeAgo}}</ex>{{ user.maxCreationDateCurrentAutoObservation | amLocale:&apos;fr&apos; | amTimeAgo}}</ph></msg>
+  <msg id="6694841105712213055"><source>app/user-components/user-card/user-card.component.html:30</source>Pas d&apos;échange en cours</msg>
+  <msg id="5276429321572304206"><source>app/user-components/user-card/user-card.component.html:31</source><ph name="START_TAG_STRONG"><ex>&lt;strong&gt;</ex>&lt;strong&gt;</ph><ph name="INTERPOLATION"><ex>{{user.nbSequence ? user.nbSequence : 0}}</ex>{{user.nbSequence ? user.nbSequence : 0}}</ph><ph name="CLOSE_TAG_STRONG"><ex>&lt;/strong&gt;</ex>&lt;/strong&gt;</ph> Echange(s) terminé(s)</msg>
+  <msg id="5896013225697893921"><source>app/user-components/user-card/user-card.component.html:36</source>En attente</msg>
+  <msg id="4651293512297224684"><source>app/shell/modale/modale.component.html:3</source>Enregistrement</msg>
+  <msg id="480797017440761339"><source>app/user-components/user-search/user-search.component.html:33</source>Fonction: <ph name="INTERPOLATION"><ex>{{usr?.fonctionPop?.name}}</ex>{{usr?.fonctionPop?.name}}</ph></msg>
+  <msg id="604957772119365701"><source>app/user-components/campaign-list/campaign-list.component.html:7</source>Choisir une Campagne</msg>
+  <msg id="5200551244162422693"><source>app/user-components/campaign-list/campaign-list.component.html:21,23</source>
+	            					Description Campagne <ph name="INTERPOLATION"><ex>{{camp.description}}</ex>{{camp.description}}</ph>
+	            				</msg>
+  <msg id="enquete_placeholder"><source>app/app.component.html:4</source>Exemple : Bonjour, pouvez-vous svp me partager votre perception sur ma posture managériale ? Je vous remercie d&apos;avance d&apos;y consacrer quelques instants. J’espère que nous aurons l’occasion d’en parler de vive voix !</msg>
+  <msg id="enquete_conclusion"><source>app/app.component.html:5</source>Conclusion enregistrée !</msg>
+  <msg id="goodMessageList_type"><source>app/app.component.html:6</source>On me conseille de continuer</msg>
+  <msg id="badMessageList_type"><source>app/app.component.html:7</source>On me conseille d&apos;arreter</msg>
+  <msg id="improveMessageList_type"><source>app/app.component.html:8</source>On me conseille de commencer</msg>
+  <msg id="enquete_modaleTxt"><source>app/app.component.html:9</source>Enregistrer vos réponses ?</msg>
+  <msg id="enquete_modaleTxt_notAnswredCount"><source>app/app.component.html:10</source>Vous n&apos;avez pas répondu à une question, enregistrer quand même ?</msg>
+  <msg id="enquete_modaleTxt_notAnswredCount_multi"><source>app/app.component.html:11</source>Vous n&apos;avez pas répondu à @@notAnswredCount questions, enregistrer quand même ?</msg>
+  <msg id="enquete_modaleTxt_save"><source>app/app.component.html:12</source>oui</msg>
+  <msg id="enquete_modaleTxt_cancel"><source>app/app.component.html:13</source>annuler</msg>
+  <msg id="enquete_modaleTxt_message"><source>app/app.component.html:14</source>Réponses Enregistrées !</msg>
+  <msg id="enquete_qcm_message"><source>app/app.component.html:15</source>Questionnaire 360 enregistré !</msg>
+  <msg id="enquete_qcm_modaleTxt"><source>app/app.component.html:16</source>Votre questionnaire comporte @@questionCount question(s), merci de confirmer l&apos;envoi aux participants.</msg>
+  <msg id="enquete_userSelect_dup"><source>app/app.component.html:17</source>Vous avez déja séléctionné </msg>
+  <msg id="enquete_userSelect_modaleTxt"><source>app/app.component.html:18</source>Vous devez sélectionner au moins un participant pour continuer</msg>
+  <msg id="enquete_userSelect_confirm"><source>app/app.component.html:19</source>Merci de confirmer l&apos;envoi aux participants.</msg>
+  <msg id="enquete_userSelect_saved"><source>app/app.component.html:20</source>Questionnaire 360 enregistré ! </msg>
+  <msg id="newobs_modaleTxt"><source>app/app.component.html:22</source>Enregistrer votre observation ?</msg>
+  <msg id="newobs_modaleTxt_1"><source>app/app.component.html:23</source>Vous n&apos;avez pas répondu à une question, enregistrer quand même ?</msg>
+  <msg id="newobs_modaleTxt_2"><source>app/app.component.html:24</source>Vous n&apos;avez pas répondu à &apos; + questions.length + &apos; questions, enregistrer quand même ? </msg>
+  <msg id="newobs_modaleTxt_saved"><source>app/app.component.html:25</source>Observation Enregistrée !</msg>
+  <msg id="userlist"><source>app/app.component.html:27</source>Il n&apos;y a pas de campagne attachée à @@name .</msg>
+  <msg id="userSearch_placeholder"><source>app/app.component.html:28</source>rechercher un collaborateur</msg>
+  <msg id="report_conclusionn_obs"><source>app/app.component.html:30</source>Enregistrer votre échange ?</msg>
+  <msg id="2102825898069375693"><source>app/shell/navigation/navigation.component.html:9</source>Menu</msg>
+  <msg id="2288513108450439427"><source>app/shell/navigation/navigation.component.html:17</source>Support</msg>
+  <msg id="8440768097028270279"><source>app/shell/navigation/navigation.component.html:18</source>RGPD</msg>
+  <msg id="6446192435648820310"><source>app/shell/navigation/navigation.component.html:19</source><source>app/shell/unautorized/unautorized.component.html:3</source>Déconnexion</msg>
+  <msg id="278590554940342755"><source>app/shell/navigation/navigation.component.html:31</source>menu</msg>
+  <msg id="2695865147471550421"><source>app/shell/navigation/navigation.component.html:46</source>profil</msg>
+  <msg id="6299946964572579475"><source>app/shell/deconnected/deconnected.component.html:2</source>Vous êtes déconnecté !</msg>
+  <msg id="2454050363478003966"><source>app/shell/deconnected/deconnected.component.html:3</source>Login</msg>
+  <msg id="981575357968627279"><source>app/shell/unautorized/unautorized.component.html:2</source>Vous n&apos;êtes pas autorisé à utiliser cette application</msg>
+  <msg id="8245970774700991109"><source>app/shell/home/home.component.html:29,31</source>
+						<ph name="START_TAG_MAT_ICON"><ex>&lt;mat-icon&gt;</ex>&lt;mat-icon&gt;</ph>play_circle_outline<ph name="CLOSE_TAG_MAT_ICON"><ex>&lt;/mat-icon&gt;</ex>&lt;/mat-icon&gt;</ph>Découvrir
+					</msg>
+  <msg id="1909437188701622343"><source>app/shell/home/home.component.html:32</source>Observer</msg>
+  <msg id="2084438886704487841"><source>app/shell/home/home.component.html:33</source>Échanger</msg>
+  <msg id="5487135542132122660"><source>app/shell/home/home.component.html:34,36</source>
+						<ph name="START_TAG_MAT_ICON"><ex>&lt;mat-icon&gt;</ex>&lt;mat-icon&gt;</ph>settings_backup_restore<ph name="CLOSE_TAG_MAT_ICON"><ex>&lt;/mat-icon&gt;</ex>&lt;/mat-icon&gt;</ph>Partager 360
+					</msg>
+  <msg id="1643400104217774175"><source>app/shell/home/home.component.html:37</source>Progresser</msg>
+  <msg id="7505733303834418343"><source>app/shell/support/support.component.html:1,16</source>
+  <ph name="START_HEADING_LEVEL1"><ex>&lt;h1&gt;</ex>&lt;h1&gt;</ph>Bug ou suggestion ?<ph name="CLOSE_HEADING_LEVEL1"><ex>&lt;/h1&gt;</ex>&lt;/h1&gt;</ph>
+  
+  <ph name="START_TAG_DIV"><ex>&lt;div&gt;</ex>&lt;div&gt;</ph>
+  <ph name="START_PARAGRAPH"><ex>&lt;p&gt;</ex>&lt;p&gt;</ph>Vous êtes au bon endroit ! Pour faciliter notre intervention, avant de nous envoyez un mail, merci de lire attentivement ceci :<ph name="CLOSE_PARAGRAPH"><ex>&lt;/p&gt;</ex>&lt;/p&gt;</ph>
+
+  <ph name="START_PARAGRAPH"><ex>&lt;p&gt;</ex>&lt;p&gt;</ph><ph name="START_TAG_STRONG"><ex>&lt;strong&gt;</ex>&lt;strong&gt;</ph>Concernant les bugs,<ph name="CLOSE_TAG_STRONG"><ex>&lt;/strong&gt;</ex>&lt;/strong&gt;</ph> merci d&apos;indiquer clairement dans votre message
+    votre mail ou matricule de login, ainsi que les circonstances dans 
+    lesquelles vous reproduisez le bug. Précisez sur quel écran vous avez constaté le problème et détaillez le bug observé.<ph name="CLOSE_PARAGRAPH"><ex>&lt;/p&gt;</ex>&lt;/p&gt;</ph>
+
+  <ph name="START_PARAGRAPH"><ex>&lt;p&gt;</ex>&lt;p&gt;</ph><ph name="START_TAG_STRONG"><ex>&lt;strong&gt;</ex>&lt;strong&gt;</ph>Concernant les suggestions,<ph name="CLOSE_TAG_STRONG"><ex>&lt;/strong&gt;</ex>&lt;/strong&gt;</ph> 
+    nous sommes ouverts! Donc n&apos;hésitez pas à nous proposer vos idées d&apos;amélioration de l&apos;application.<ph name="CLOSE_PARAGRAPH"><ex>&lt;/p&gt;</ex>&lt;/p&gt;</ph>
+
+    Et pour nous contacter, c&apos;est par ici : <ph name="START_LINK"><ex>&lt;a&gt;</ex>&lt;a&gt;</ph>assistance@hiji.fr<ph name="CLOSE_LINK"><ex>&lt;/a&gt;</ex>&lt;/a&gt;</ph> ou <ph name="START_LINK_1"><ex>&lt;a&gt;</ex>&lt;a&gt;</ph>01 88 32 52 82<ph name="CLOSE_LINK"><ex>&lt;/a&gt;</ex>&lt;/a&gt;</ph>
+  <ph name="CLOSE_TAG_DIV"><ex>&lt;/div&gt;</ex>&lt;/div&gt;</ph>
+</msg>
+  <msg id="1751155812188387945"><source>app/shell/rgpd/rgpd.component.html:2</source>Merci d&apos;accepter les conditions RGPD</msg>
+  <msg id="6048295317699645220"><source>app/shell/rgpd/rgpd.component.html:3</source>Accepter</msg>
+  <msg id="1529746829657129908"><source>app/shell/modale-user/modale-user.component.html:2</source>Nouvel utilisateur</msg>
+  <msg id="1883542141331478662"><source>app/shell/modale-user/modale-user.component.html:6</source>Nom Prénom</msg>
+  <msg id="5872641366320227720"><source>app/shell/modale-user/modale-user.component.html:11</source>Email professionnel</msg>
+  <msg id="9222330152375559662"><source>app/shell/modale-user/modale-user.component.html:19</source>Créer</msg>
+  <msg id="1711750570766225138"><source>app/shell/modale-user/modale-user.component.html:20</source>Annuler</msg>
+  <msg id="3324412928825966444"><source>app/observer/new-obs/new-observation/new-observation.component.html:32</source><source>app/enquete360/new-obs360/new-obs360.component.html:57</source>Commentaires</msg>
+  <msg id="3265519896622933640"><source>app/observer/ref-select/ref-select.component.html:7</source>Choisir un référentiel</msg>
+  <msg id="7201966458462488587"><source>app/observer/ref-select/ref-select.component.html:8</source>Aucun référentiel</msg>
+  <msg id="4899882118384347950"><source>app/observer/ui/observation/observation.component.html:1,3</source>
+  observation works!
+</msg>
+  <msg id="8494146283650530198"><source>app/visualiser/reporting/reporting.component.html:6</source><source>app/visualiser/reporting/reportingOld.component.html:6</source>Echange </msg>
+  <msg id="6122128902059507363"><source>app/visualiser/reporting/reporting.component.html:7,8</source>du <ph name="INTERPOLATION"><ex>{{observationInfo.minCreationDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM&apos;}}</ex>{{observationInfo.minCreationDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM&apos;}}</ph> 
+                        au <ph name="INTERPOLATION_1"><ex>{{observationInfo.maxCreationDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM&apos;}}</ex>{{observationInfo.maxCreationDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM&apos;}}</ph></msg>
+  <msg id="4505879603964708987"><source>app/visualiser/reporting/reportingOld.component.html:7</source>du <ph name="INTERPOLATION"><ex>{{observationSequence.creationDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM&apos;}}</ex>{{observationSequence.creationDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM&apos;}}</ph>  </msg>
+  <msg id="5019895481548360612"><source>app/visualiser/reporting/reporting-graph/reporting-graph.component.html:9,12</source>
+                          <ph name="START_TAG_STRONG"><ex>&lt;strong&gt;</ex>&lt;strong&gt;</ph>Observation<ph name="CLOSE_TAG_STRONG"><ex>&lt;/strong&gt;</ex>&lt;/strong&gt;</ph><ph name="LINE_BREAK"><ex>&lt;br&gt;</ex>&lt;br&gt;</ph>
+                          <ph name="INTERPOLATION"><ex>{{nbCurrObs}}</ex>{{nbCurrObs}}</ph> observation(s)
+                        </msg>
+  <msg id="4811710701905451748"><source>app/visualiser/reporting/reporting-graph/reporting-graph.component.html:17,20</source>
+                          <ph name="START_TAG_STRONG"><ex>&lt;strong&gt;</ex>&lt;strong&gt;</ph>Auto-observation<ph name="CLOSE_TAG_STRONG"><ex>&lt;/strong&gt;</ex>&lt;/strong&gt;</ph><ph name="LINE_BREAK"><ex>&lt;br&gt;</ex>&lt;br&gt;</ph>
+                          <ph name="INTERPOLATION"><ex>{{nbCurrAutoObs}}</ex>{{nbCurrAutoObs}}</ph> auto-observation(s)
+                        </msg>
+  <msg id="1091062226358142624"><source>app/visualiser/reporting/reporting-graph/reporting-graph.component.html:25,28</source>
+                          <ph name="START_TAG_STRONG"><ex>&lt;strong&gt;</ex>&lt;strong&gt;</ph>Equipe<ph name="CLOSE_TAG_STRONG"><ex>&lt;/strong&gt;</ex>&lt;/strong&gt;</ph><ph name="LINE_BREAK"><ex>&lt;br&gt;</ex>&lt;br&gt;</ph>
+                          
+                        </msg>
+  <msg id="8060903969342483385"><source>app/visualiser/reporting/reporting-observations-messages/reporting-observations-messages.component.html:6,8</source>
+                  <ph name="INTERPOLATION"><ex>{{messages.length}}</ex>{{messages.length}}</ph> Messages
+              </msg>
+  <msg id="7362028022275190572"><source>app/visualiser/reporting/reporting-observations-messages/reporting-observations-messages.component.html:41</source><ph name="INTERPOLATION"><ex>{{msg.observerPop.name}}</ex>{{msg.observerPop.name}}</ph> le <ph name="INTERPOLATION_1"><ex>{{msg.creationDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM&apos;}}</ex>{{msg.creationDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM&apos;}}</ph></msg>
+  <msg id="174002142932526740"><source>app/visualiser/reporting/reporting-observations-conclusion/reporting-observations-conclusion.component.html:5</source><source>app/enquete360/enquete-results/enquete-conclusion/enquete-conclusion.component.html:5</source>Conclusion</msg>
+  <msg id="4977912145007192180"><source>app/visualiser/reporting/reporting-observations-conclusion/reporting-observations-conclusion.component.html:9</source><source>app/enquete360/enquete-desc/enquete-desc.component.html:29</source><source>app/enquete360/enquete-results/enquete-conclusion/enquete-conclusion.component.html:8</source>Enregistrer</msg>
+  <msg id="8530073761421979390"><source>app/visualiser/sequence-list/sequence-list.component.html:11,13</source>
+                  Séquences en cours
+                </msg>
+  <msg id="3926533736832482089"><source>app/visualiser/sequence-list/sequence-list.component.html:15</source><source>app/visualiser/sequence-list/sequence-list.component.html:16</source><source>app/visualiser/sequence-list/sequence-list.component.html:43</source>Voir</msg>
+  <msg id="7953554606176461487"><source>app/visualiser/sequence-list/sequence-list.component.html:27</source>Observation <ph name="INTERPOLATION"><ex>{{y+1}}</ex>{{y+1}}</ph> du <ph name="INTERPOLATION_1"><ex>{{obs.creationDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM YYYY à HH:mm&apos;}}</ex>{{obs.creationDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM YYYY à HH:mm&apos;}}</ph> </msg>
+  <msg id="5451346660201236132"><source>app/visualiser/sequence-list/sequence-list.component.html:39,41</source>
+                  Echange du <ph name="INTERPOLATION"><ex>{{seq.creationDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM YYYY&apos;}}</ex>{{seq.creationDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM YYYY&apos;}}</ph>
+              </msg>
+  <msg id="4914849944020579668"><source>app/visualiser/sequence-list/sequence-list.component.html:54</source>Observation <ph name="INTERPOLATION"><ex>{{y+1}}</ex>{{y+1}}</ph> du <ph name="INTERPOLATION_1"><ex>{{obs.creationDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM YYYY à HH:mm&apos;}}</ex>{{obs.creationDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM YYYY à HH:mm&apos;}}</ph></msg>
+  <msg id="445311604344233017"><source>app/visualiser/reporting/bi-gest/bi-gest.component.html:29</source><source>app/visualiser/reporting/multi-gest/multi-gest.component.html:48</source>Histogramme</msg>
+  <msg id="3147112275414836740"><source>app/visualiser/reporting/reporting-chart/reporting-chart.component.html:4</source>Chargement</msg>
+  <msg id="7126959100096283691"><source>app/visualiser/reporting/reporting-chart/reporting-chart.component.html:6</source>Aucune donnée</msg>
+  <msg id="8216913519568516725"><source>app/enquete360/users-select/users-select.component.html:4</source>Sélection des participants</msg>
+  <msg id="9085891809930656099"><source>app/enquete360/users-select/users-select.component.html:7,9</source>Choisissez les participants que vous souhaitez solliciter pour répondre à ce questionnaire. S’ils ne sont pas dans la liste, vous pouvez les créer, en les répartissant en 3 catégories : managers, pairs et collaborateurs.
+
+                Par convention, le terme « manager » s’applique à des personnes qui sont vos supérieurs hiérarchiques, les « pairs » sont aux même niveau que vous alors que les « collaborateurs » dépendent de vous hiérarchiquement. Vous êtes libres de les choisir.</msg>
+  <msg id="6865775144420183970"><source>app/enquete360/users-select/users-select.component.html:25</source>Pas de manager sélectionné</msg>
+  <msg id="4035366213649055435"><source>app/enquete360/users-select/users-select.component.html:34,36</source>    
+                Créer un manager
+        </msg>
+  <msg id="3731292256925585687"><source>app/enquete360/users-select/users-select.component.html:49</source>Pas de pair sélectionné</msg>
+  <msg id="3306832042093616919"><source>app/enquete360/users-select/users-select.component.html:58,60</source>    
+                Créer un pair
+        </msg>
+  <msg id="2693839380852794976"><source>app/enquete360/users-select/users-select.component.html:72</source>Pas de collaborateur sélectionné</msg>
+  <msg id="3497658293087631658"><source>app/enquete360/users-select/users-select.component.html:81,83</source>    
+                Créer un collaborateur
+        </msg>
+  <msg id="2044704998167251258"><source>app/enquete360/users-select/users-select.component.html:87,89</source>    
+            Valider
+    </msg>
+  <msg id="7533081423711573321"><source>app/enquete360/qcm-select/ref-qcm/ref-qcm.component.html:9</source>Détail</msg>
+  <msg id="8151564538369708979"><source>app/enquete360/qcm-select/ref-qcm/ref-qcm.component.html:10</source>Tout sélectionner</msg>
+  <msg id="241077791711880850"><source>app/enquete360/qcm-select/qcm-select.component.html:2</source>questions sélectionnées : </msg>
+  <msg id="6229580778352760972"><source>app/enquete360/qcm-select/qcm-select.component.html:5</source>Temps de réponse estimé du questionnaire : <ph name="INTERPOLATION"><ex>{{duration + &apos; minutes&apos;}}</ex>{{duration + &apos; minutes&apos;}}</ph></msg>
+  <msg id="336290601584757173"><source>app/enquete360/qcm-select/qcm-select.component.html:10,13</source>
+                  
+      Valider
+  </msg>
+  <msg id="5508499547063845298"><source>app/enquete360/new-enquete/new-enquete.component.html:6</source>2 options :</msg>
+  <msg id="329483324688524956"><source>app/enquete360/new-enquete/new-enquete.component.html:10,13</source>
+                        Personnaliser votre questionnaire. Vous avez la main pour choisir les personnes que vous souhaitez solliciter ainsi que les questions ou questionnaires que vous souhaitez leur poser.
+                          
+                      </msg>
+  <msg id="2316074414336677345"><source>app/enquete360/new-enquete/new-enquete.component.html:15,17</source>
+                          Sélectionner un questionnaire global. Parfois, une démarche &quot;globale&quot; est lancée par votre entreprise : un questionnaire vous est proposé, sans que vous ayez la possibilité de le modifier. Dans ce cas, vous n&apos;aurez qu&apos;à sélectionner les personnes que vous souhaitez interroger sur ce questionnaire spécifique.
+                      </msg>
+  <msg id="930922695898810734"><source>app/enquete360/new-enquete/new-enquete.component.html:86,89</source>
+                        
+                          Questionnaire personnalisé
+                      </msg>
+  <msg id="6979898606895950147"><source>app/enquete360/new-enquete/new-enquete.component.html:91,93</source>
+                          Questionnaire global
+                        </msg>
+  <msg id="7062526198676099751"><source>app/enquete360/enquete-desc/enquete-desc.component.html:4</source>Description de votre questionnaire</msg>
+  <msg id="4007462011271927955"><source>app/enquete360/enquete-desc/enquete-desc.component.html:7,9</source>Ici vous donnez un nom à votre questionnaire et vous précisez dans quel contexte ou autour de quel 
+              projet vous sollicitez les participants.
+            </msg>
+  <msg id="2994113072394951327"><source>app/enquete360/enquete-desc/enquete-desc.component.html:21</source>Titre du questionnaire</msg>
+  <msg id="6386590987818942211"><source>app/enquete360/enquete-desc/enquete-desc.component.html:25</source>Description du questionnaire</msg>
+  <msg id="7442272866289296429"><source>app/enquete360/requests360/requests360.component.html:4</source>Sélectionnez le questionnaire auquel vous voulez répondre.</msg>
+  <msg id="1905798329891380452"><source>app/enquete360/requests360/requests360.component.html:5</source>Sélectionnez l&apos;enquête dont vous souhaitez connaitre les résultats.</msg>
+  <msg id="6096176475282622708"><source>app/enquete360/requests360/requests360.component.html:6</source>Choisissez votre questionnaire.</msg>
+  <msg id="4940533120749695098"><source>app/enquete360/requests360/requests360.component.html:22</source>Pas de demande en cours</msg>
+  <msg id="472532416954579681"><source>app/enquete360/requests360/requests360.component.html:23</source>Pas de résultats disponibles</msg>
+  <msg id="2689074527349479290"><source>app/enquete360/requests360/requests360.component.html:24</source>Aucun questionnaire global n&apos;est proposé actuellement, vous pouvez néanmoins créer un questionnaire personnalisé.</msg>
+  <msg id="6279537633262050609"><source>app/enquete360/requests360/requests360.component.html:25,27</source>           
+      Créer un questionnaire
+  </msg>
+  <msg id="173110838464489847"><source>app/enquete360/new-obs360/new-obs360.component.html:13,20</source>
+              <ph name="START_PARAGRAPH"><ex>&lt;p&gt;</ex>&lt;p&gt;</ph><ph name="INTERPOLATION"><ex>{{inquiry.description}}</ex>{{inquiry.description}}</ph> <ph name="LINE_BREAK"><ex>&lt;br&gt;</ex>&lt;br&gt;</ph><ph name="LINE_BREAK"><ex>&lt;br&gt;</ex>&lt;br&gt;</ph>
+                A la fin du questionnaire, vous trouverez des champs texte libre pour indiquer 
+                mes points faibles, points forts et axes d&apos;amélioration.
+              
+              <ph name="CLOSE_PARAGRAPH"><ex>&lt;/p&gt;</ex>&lt;/p&gt;</ph>
+
+        </msg>
+  <msg id="719623887195163609"><source>app/enquete360/requests360/request-card/request-card.component.html:27,29</source><ph name="INTERPOLATION"><ex>{{inquiry.observableGestures.length}}</ex>{{inquiry.observableGestures.length}}</ph> questions
+                 
+                </msg>
+  <msg id="1874482200654152890"><source>app/enquete360/requests360/request-card/request-card.component.html:35</source>fin le <ph name="INTERPOLATION"><ex>{{inquiry.endDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM&apos;}}</ex>{{inquiry.endDate | amLocale:&apos;fr&apos; | amDateFormat:&apos;Do MMMM&apos;}}</ph></msg>
+  <msg id="381794938736222255"><source>app/enquete360/enquete-results/enquete-results.component.html:16</source>Interviewé(s)</msg>
+  <msg id="1480201399149653554"><source>app/enquete360/enquete-results/enquete-results.component.html:21</source>Participant(s)</msg>
+  <msg id="611165307608191638"><source>app/enquete360/enquete-results/enquete-results.component.html:26</source>Question(s)</msg>
+  <msg id="1119815596266985190"><source>app/enquete360/enquete-results/obs360-bi/obs360-bi.component.html:63</source><source>app/enquete360/enquete-results/obs360-multi/obs360-multi.component.html:116</source>Bargraph</msg>
+  <msg id="4465441166925974267"><source>app/enquete360/enquete-results/obs360-multi/obs360-multi.component.html:124,126</source>
+            <ph name="INTERPOLATION"><ex>{{enqueteResService.selectedUsr.name}}</ex>{{enqueteResService.selectedUsr.name}}</ph> n&apos;a pas répondu à cette question.
+          </msg>
+  <msg id="8440705342759984758"><source>app/enquete360/enquete-results/results-graph/results-graph.component.html:9,12</source>
+                          <ph name="START_TAG_STRONG"><ex>&lt;strong&gt;</ex>&lt;strong&gt;</ph>Managers<ph name="CLOSE_TAG_STRONG"><ex>&lt;/strong&gt;</ex>&lt;/strong&gt;</ph><ph name="LINE_BREAK"><ex>&lt;br&gt;</ex>&lt;br&gt;</ph>
+                          <ph name="INTERPOLATION"><ex>{{mgrResCount}}</ex>{{mgrResCount}}</ph> réponse(s)
+                        </msg>
+  <msg id="6374428322447920782"><source>app/enquete360/enquete-results/results-graph/results-graph.component.html:17,20</source>
+                          <ph name="START_TAG_STRONG"><ex>&lt;strong&gt;</ex>&lt;strong&gt;</ph>Collaborateurs<ph name="CLOSE_TAG_STRONG"><ex>&lt;/strong&gt;</ex>&lt;/strong&gt;</ph><ph name="LINE_BREAK"><ex>&lt;br&gt;</ex>&lt;br&gt;</ph>
+                          <ph name="INTERPOLATION"><ex>{{clbResCount}}</ex>{{clbResCount}}</ph> réponse(s)
+                        </msg>
+  <msg id="8506427080936264257"><source>app/enquete360/enquete-results/results-graph/results-graph.component.html:25,28</source>
+                          <ph name="START_TAG_STRONG"><ex>&lt;strong&gt;</ex>&lt;strong&gt;</ph>Moyenne<ph name="CLOSE_TAG_STRONG"><ex>&lt;/strong&gt;</ex>&lt;/strong&gt;</ph><ph name="LINE_BREAK"><ex>&lt;br&gt;</ex>&lt;br&gt;</ph>
+
+                        </msg>
+  <msg id="7329702444265391418"><source>app/enquete360/enquete-results/results-obs/results-obs.component.html:24,26</source>Ce graphe synthétise les réponses des gestes observables associés à la compétence &quot;<ph name="INTERPOLATION"><ex>{{obsGest.skill.name}}</ex>{{obsGest.skill.name}}</ph>&quot;. Il présente le résultat minimum, moyen et maximum par collège de répondants. Le bouton « bargraph » vous permet d’accéder au même type d’informations pour chaque geste observable.
+
+          </msg>
+  <msg id="8378357411639958481"><source>app/enquete360/enquete-results/results-messages/results-messages.component.html:1</source>Messages libres</msg>
+  <msg id="2555466810929782863"><source>app/enquete360/enquete-results/enquete-results-layout/enquete-results-layout.component.html:5</source>Filtrer par participant</msg>
+  <msg id="1783056772557561562"><source>app/enquete360/enquete-results/enquete-results-layout/enquete-results-layout.component.html:10,12</source>
+            Tous les résultats
+        </msg>
+  <msg id="2047363329997202077"><source>app/enquete360/home360/home360.component.html:6,8</source>Un questionnaire 360 est une démarche qui permet de recueillir et de comparer les perceptions de son entourage sur la mise en œuvre de comportements professionnels.
+
+            Ici, en fonction de votre profil, vous pouvez créer votre propre enquête 360, répondre aux questionnaires émis par vos collègues et visualiser les résultats de vos enquêtes.</msg>
+  <msg id="2737636468374340604"><source>app/enquete360/home360/home360.component.html:20,22</source>
+                <ph name="START_TAG_MAT_ICON"><ex>&lt;mat-icon&gt;</ex>&lt;mat-icon&gt;</ph>edit<ph name="CLOSE_TAG_MAT_ICON"><ex>&lt;/mat-icon&gt;</ex>&lt;/mat-icon&gt;</ph>Créer
+              </msg>
+  <msg id="8537513378477513699"><source>app/enquete360/home360/home360.component.html:25,27</source>
+                <ph name="START_TAG_MAT_ICON"><ex>&lt;mat-icon&gt;</ex>&lt;mat-icon&gt;</ph>question_answer<ph name="CLOSE_TAG_MAT_ICON"><ex>&lt;/mat-icon&gt;</ex>&lt;/mat-icon&gt;</ph>Répondre
+              </msg>
+  <msg id="4369357596183551230"><source>app/enquete360/home360/home360.component.html:30,32</source>
+                <ph name="START_TAG_MAT_ICON"><ex>&lt;mat-icon&gt;</ex>&lt;mat-icon&gt;</ph>bar_chart<ph name="CLOSE_TAG_MAT_ICON"><ex>&lt;/mat-icon&gt;</ex>&lt;/mat-icon&gt;</ph>Visualiser
+              </msg>
+</messagebundle>
